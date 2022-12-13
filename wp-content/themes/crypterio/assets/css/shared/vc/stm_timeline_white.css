@@ -1,0 +1,73 @@
+.stm_timeline-wrap .timeline-item {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  min-height: 120px; }
+  .stm_timeline-wrap .timeline-item .timeline-date {
+    -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+    max-width: 20%;
+    position: relative;
+    padding-right: 20px; }
+    .stm_timeline-wrap .timeline-item .timeline-date > span {
+      display: block; }
+    .stm_timeline-wrap .timeline-item .timeline-date .timeline_month {
+      font-size: 16px;
+      color: #34bbff; }
+    .stm_timeline-wrap .timeline-item .timeline-date .timeline_year {
+      font-weight: 600;
+      font-size: 42px; }
+    .stm_timeline-wrap .timeline-item .timeline-date::before {
+      content: '';
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      display: block;
+      top: 0;
+      right: 0;
+      border-radius: 50%; }
+    .stm_timeline-wrap .timeline-item .timeline-date.past::before {
+      background-image: linear-gradient(to right, #34bbff, #28eedb) !important;
+      background-image: linear-gradient(to right, #34bbff, #28eedb) !important;
+      background-image: -moz-linear-gradient(to right, #34bbff, #28eedb) !important;
+      box-shadow: 0px 6px 12px 0px rgba(52, 187, 255, 0.5); }
+    .stm_timeline-wrap .timeline-item .timeline-date.present::before {
+      background-image: linear-gradient(to right, #a54dff, #4040ff) !important;
+      background-image: linear-gradient(to right, #a54dff, #4040ff) !important;
+      background-image: -moz-linear-gradient(to right, #a54dff, #4040ff) !important;
+      box-shadow: 0px 6px 12px 0px rgba(180, 79, 255, 0.5); }
+    .stm_timeline-wrap .timeline-item .timeline-date.upcoming::before {
+      background-image: linear-gradient(to right, #d1d3d9, #d1d3d9) !important;
+      background-image: linear-gradient(to right, #d1d3d9, #d1d3d9) !important;
+      background-image: -moz-linear-gradient(to right, #d1d3d9, #d1d3d9) !important; }
+    .stm_timeline-wrap .timeline-item .timeline-date::after {
+      content: '';
+      position: absolute;
+      width: 2px;
+      height: auto;
+      top: 25px;
+      bottom: 5px;
+      display: block;
+      background-color: #e4e5e8;
+      right: 9px; }
+  .stm_timeline-wrap .timeline-item .timeline_content {
+    -ms-flex: 0 0 80%;
+        flex: 0 0 80%;
+    max-width: 80%;
+    padding-bottom: 60px;
+    padding-left: 100px; }
+  .stm_timeline-wrap .timeline-item:last-child .timeline-date::after {
+    display: none; }
+
+@media (max-width: 768px) {
+  .stm_timeline-wrap .timeline-item .timeline_content {
+    padding-left: 30px;
+    -ms-flex: 0 0 65%;
+        flex: 0 0 65%;
+    max-width: 65%; }
+  .stm_timeline-wrap .timeline-item .timeline-date {
+    -ms-flex: 0 0 35%;
+        flex: 0 0 35%;
+    max-width: 35%; } }
